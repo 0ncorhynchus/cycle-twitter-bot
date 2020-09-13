@@ -79,12 +79,6 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Println("tweet:", tweet)
-
-	fmt.Println("CONSUMER_KEY:       ", consumer_key)
-	fmt.Println("CONSUMER_SECRET:    ", consumer_secret)
-	fmt.Println("ACCESS_TOKEN:       ", access_token)
-	fmt.Println("ACCESS_TOKEN_SECRET:", access_token_secret)
 
 	config := oauth1.NewConfig(consumer_key, consumer_secret)
 	token := oauth1.NewToken(access_token, access_token_secret)
